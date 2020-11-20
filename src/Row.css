@@ -1,0 +1,23 @@
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+/* Tell all browsers to keep functionality but don't display the scroll bar */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
